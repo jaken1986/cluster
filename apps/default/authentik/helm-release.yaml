@@ -30,7 +30,7 @@ spec:
       error_reporting:
         enabled: false
       postgresql:
-        password: "${AUTHENIK_POSTGRESQL}"
+        password: "${POSTGRESQL}"
 
     ingress:
       enabled: true
@@ -50,6 +50,6 @@ spec:
 
     postgresql:
       enabled: true
-      postgresqlPassword: "${AUTHENIK_POSTGRESQL}"
+      postgresqlPassword: "${POSTGRESQL}"
     redis:
       enabled: true
