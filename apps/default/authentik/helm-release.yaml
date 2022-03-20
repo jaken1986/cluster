@@ -28,7 +28,7 @@ spec:
       # This sends anonymous usage-data, stack traces on errors and
       # performance data to sentry.beryju.org, and is fully opt-in
       error_reporting:
-        enabled: true
+        enabled: false
       postgresql:
         password: "${AUTHENIK_POSTGRESQL}"
 
