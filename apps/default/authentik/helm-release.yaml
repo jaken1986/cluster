@@ -24,7 +24,7 @@ spec:
       retries: 3
   values:
     authentik:
-      secret_key: "${AUTHENIK_SECRET_KEY}"
+      secret_key: "${SECRET_KEY}"
       # This sends anonymous usage-data, stack traces on errors and
       # performance data to sentry.beryju.org, and is fully opt-in
       error_reporting:
