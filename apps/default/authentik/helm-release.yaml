@@ -34,11 +34,18 @@ spec:
 
     ingress:
       enabled: true
+      ingressClassName: "traefik"
+      annotations:
+        cert-manager.io/cluster-issuer: "letsencrypt-staging"
       hosts:
       - host: authentik.${SECRET_DOMAIN}
         paths:
         - path: "/"
           pathType: Prefix
+      tls:
+        - hosts:
+            - "authentik.${SECRET_DOMAIN}"
+          secretName: "authentik-tls"
 
     postgresql:
       enabled: true
