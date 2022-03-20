@@ -24,13 +24,13 @@ spec:
       retries: 3
   values:
     authentik:
-      secret_key: "eqHS7UUkF/qKh4P14F/C/ZwSlRZiWoJ1yrdT0PRWSfN3vVIa"
+      secret_key: "${AUTHENIK_SECRET_KEY}"
       # This sends anonymous usage-data, stack traces on errors and
       # performance data to sentry.beryju.org, and is fully opt-in
       error_reporting:
         enabled: true
       postgresql:
-        password: "eqHS7UUkF/qKh4P14F/C/ZwSlRZiWoJ1yrdT0PRWSfN3vVIa"
+        password: "${AUTHENIK_POSTGRESQL}"
 
     ingress:
       enabled: true
@@ -42,6 +42,6 @@ spec:
 
     postgresql:
       enabled: true
-      postgresqlPassword: "eqHS7UUkF/qKh4P14F/C/ZwSlRZiWoJ1yrdT0PRWSfN3vVIa"
+      postgresqlPassword: "${AUTHENIK_POSTGRESQL}"
     redis:
       enabled: true
