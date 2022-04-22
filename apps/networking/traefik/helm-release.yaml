@@ -78,10 +78,6 @@ spec:
       redis:
         port: 6379
         expose: false
-      wazuhagent:
-        port: 1514
-        expose: true
-        exposedPort: 1514
     tlsOptions:
       default:
         minVersion: VersionTLS12
