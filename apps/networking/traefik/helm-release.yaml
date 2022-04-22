@@ -81,7 +81,7 @@ spec:
       wazuhagent:
         port: 1514
         expose: true
-        exposedPort: 31514
+        exposedPort: 1514
     tlsOptions:
       default:
         minVersion: VersionTLS12
