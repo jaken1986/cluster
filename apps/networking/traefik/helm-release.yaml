@@ -75,9 +75,6 @@ spec:
         port: 8082
         expose: true
         exposedPort: 8082
-      redis:
-        port: 6379
-        expose: false
     tlsOptions:
       default:
         minVersion: VersionTLS12
